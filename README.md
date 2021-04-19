@@ -8,7 +8,7 @@ This simple web app calculates the change in feed cost and value of gain for she
 * [Data Table] (#data-table)
 * [Page Scripts] (#page-scripts)
 
-#Top Banner
+# Top Banner
 
 
 #Chart
