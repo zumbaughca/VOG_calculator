@@ -1,0 +1,54 @@
+.output-div {
+    width: 100%;
+    display: none;
+}
+
+.input-container {
+    position: relative;
+    left: 25%;
+}
+
+.input-container > div {
+    display: inline-block;
+    height: 150px;
+    position: relative;
+    vertical-align: top;
+    margin-right: 40px;
+}
+
+.input-label-container > label {
+    display: block;
+    margin-top: 8px;
+}
+
+.input-label {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.inputs > input {
+    display: block;
+}
+
+input {
+    font-size: 24px;
+}
+
+.calculate-button-div {
+    width: fit-content;
+    margin: auto;
+    position: relative;
+    padding-top: 20px;
+    display: block;
+    text-align: center;
+}
+
+.calculate-button {
+    font-size: 20pt;
+    display: block;
+    border-radius: 8px;
+}
+
+.show-table-button {
+    margin-top: 20px;
+}

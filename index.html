@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="index.js"></script>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="chart.css">
+        <link rel="stylesheet" href="table.css">
+        <link rel="stylesheet" href="banner.css">
+    </head>
+
+    <body>
+        <div class="banner">
+            <div class="left-banner"></div>
+        </div>
+        <div class='chart-container'>
+            <div class="left-chart">
+                <canvas id='fcChart'></canvas>
+            </div>
+            <div class="right-chart">
+                <canvas id='vogChart'></canvas>
+            </div>
+            
+        </div>
+        <div class="output-div">
+           <table id="outputTable">
+               <thead>
+                   <tr>
+                       <th>Ratio of milo to corn:</th>
+                       <th>Initial BW, lbs</th>
+                       <th>Final BW, lbs</th>
+                       <th>Change in feed cost, $/ton</th>
+                       <th>Value of gain, $/lb</th>
+                   </tr>
+               </thead>
+               <tbody>
+                   <tr>
+                       <td>0</td>
+                       <td>74.52</td>
+                        <td>101.85</td>
+                        <td id="feedCost0">Price not set</td>
+                        <td id="vog0">Price not set</td>
+                   </tr>
+                   <tr>
+                       <td>0.1</td>
+                       <td>74.52</td>
+                       <td>102.51</td>
+                       <td id="feedCost1">Price not set</td>
+                       <td id="vog1">Price not set</td>
+                   </tr>
+                   <tr>
+                       <td>0.2</td>
+                       <td>74.52</td>
+                       <td>100.31</td>
+                       <td id="feedCost2">Price not set</td>
+                       <td id="vog2">Price not set</td>
+                   </tr>
+                   <tr>
+                       <td>0.3</td>
+                       <td>75.84</td>
+                       <td>104.06</td>
+                       <td id="feedCost3">Price not set</td>
+                       <td id="vog3">Price not set</td>
+                   </tr>
+               </tbody>
+           </table> 
+        </div>
+        <div class="input-container">
+            <div class="input-label-container">
+                <label class="input-label">Corn price, $/bu: </label>
+                <label class="input-label">Milo price, $/bu: </label>
+                <label class="input-label">Initial lamb price, $/cwt:</label>
+                <label class="input-label">Final lamb price, $/cwt:</label>
+            </div>
+            <div class="inputs">
+                <input id="cornPriceInput" placeholder="Current corn price">
+                <input id="miloPriceInput" placeholder="Current milo price">
+                <input id="initialLambPriceInput" placeholder="Initial lamb price">
+                <input id="finalLambPriceInput" placeholder="Final lamb price">
+            </div>
+        </div>
+        <div class="calculate-button-div">
+            <button id="calculateButton" class="calculate-button">Calculate</button>
+            <button id="showTableButton" class="show-table-button">Show Data Table</button>
+        </div>
+        
+    </body>
+</html>
