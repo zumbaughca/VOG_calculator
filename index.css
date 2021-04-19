@@ -6,32 +6,29 @@
 .input-container {
     position: relative;
     left: 25%;
+    width: 50%;
 }
 
-.input-container > div {
-    display: inline-block;
-    height: 150px;
-    position: relative;
-    vertical-align: top;
-    margin-right: 40px;
-}
-
-.input-label-container > label {
-    display: block;
-    margin-top: 8px;
-}
 
 .input-label {
+    position: relative;
     font-size: 24px;
     font-weight: bold;
+    float: left;
+    line-height: 37px;
+}
+
+
+.inputs {
+    display: inline-block;
+    margin-bottom: 5px;
+    width: 100%;
 }
 
 .inputs > input {
-    display: block;
-}
-
-input {
+    position: relative;
     font-size: 24px;
+    float: right;
 }
 
 .calculate-button-div {
