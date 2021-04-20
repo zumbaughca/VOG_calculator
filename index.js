@@ -188,7 +188,7 @@ $(document).ready(function () {
 
         return chart;
     }
-
+    
     // On load, create a new bar chart for feed cost and value of gain
     fcChart = createChart('fcChart', "Sorghum inclusion, % DM",
         "Change in feed cost, $/ton", "Change in feed cost", ["10", "20", "30"]);
