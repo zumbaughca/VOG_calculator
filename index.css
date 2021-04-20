@@ -5,8 +5,8 @@
 
 .input-container {
     position: relative;
-    left: 25%;
     width: 50%;
+    margin: auto;
 }
 
 
@@ -29,6 +29,7 @@
     position: relative;
     font-size: 24px;
     float: right;
+    max-width: 100%;
 }
 
 .calculate-button-div {
@@ -44,6 +45,7 @@
     font-size: 20pt;
     display: block;
     border-radius: 8px;
+    margin: auto;
 }
 
 .show-table-button {
