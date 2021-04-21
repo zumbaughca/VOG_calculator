@@ -35,11 +35,14 @@ $(document).ready(function () {
         })
     }
 
+    $(document).keyup((event) => {
+        if (event.which === 13) {
+            $('#calculateButton').click();
+        }
+    });
+
+
     // Calculate button clicked.
-    
-    
-    
-    
     $('#calculateButton').click(() => {
         // First, validate input to ensure it is a valid number. If not alert user to reformat.
         try {
