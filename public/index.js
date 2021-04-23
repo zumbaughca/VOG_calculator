@@ -130,7 +130,7 @@ $(document).ready(function () {
                                 if (tooltipItem.dataset.label === "Change in feed cost") {
                                     return "Change in feed cost, $/ton: " + "$ " + tooltipItem.raw
                                 } else {
-                                    return "Value of gain: " + "$ " + tooltipItem.raw
+                                    return "Value of gain: " + "$/lb " + tooltipItem.raw
                                 }
                                 
                             },
@@ -195,6 +195,6 @@ $(document).ready(function () {
     // On load, create a new bar chart for feed cost and value of gain
     fcChart = createChart('fcChart', "Sorghum inclusion, % DM",
         "Change in feed cost, $/ton", "Change in feed cost", ["10", "20", "30"]);
-    vogChart = createChart('vogChart', "Sorghum inclusion, % DM", "Value of gain, $", "Value of gain",
+    vogChart = createChart('vogChart', "Sorghum inclusion, % DM", "Value of gain, $/lb", "Value of gain",
         ["0", "10", "20", "30"]);
 });
